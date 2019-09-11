@@ -1,0 +1,84 @@
+.head{
+  display: flex;
+  flex-wrap: nowrap;
+  position: sticky;
+}
+.header-background{
+  background-color: #10DC60;
+}
+.header-icon{
+  font-size: 30px;
+  color: white;
+}
+.header-name{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+.menu-header{
+  height: 63px;
+}
+.content-slider{
+  height: 200px;
+}
+.hr-prime{
+  border: none;
+  height: 1px;
+  background: slategrey;
+  display: block;
+  opacity: 0.8;
+  visibility: visible;
+}
+.subSlider{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 12px;
+}
+.subSlider-text{
+  margin: 5px;
+}
+.slide{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.products-offer{
+  display: flex;
+  flex-wrap: nowrap;
+}
+#slide--1{
+  background-image: url("../../assets/img/dig1.jpg");
+}
+#slide--2{
+  background-image: url("../../assets/img/dig2.jpg");
+}
+#slide--3{
+  background-image: url("../../assets/img/dig3.jpg");
+}
+.wide-as-needed {
+  overflow: scroll;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.slides-md{
+  --bullet-background: white!important;
+  --bullet-background-active: #28e070!important;
+}
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+.my-custom-menu {
+  --width:75%;
+}
+.category-button-box{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.category-button{
+  width: 100%;
+}

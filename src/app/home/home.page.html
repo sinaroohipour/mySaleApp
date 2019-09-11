@@ -1,0 +1,66 @@
+<ion-menu side="start" menuId="custom" class="my-custom-menu">
+    <ion-header>
+        <ion-toolbar color="success">
+            <ion-title class="menu-header">نام کاربر</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <ion-item>خانه</ion-item>
+            <ion-item>دسته بندی محصولات</ion-item>
+            <ion-item>سبد خرید</ion-item>
+            <ion-item>درباره ما</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-router-outlet main></ion-router-outlet>
+
+
+<ion-header class="header-background ion-nowrap">
+    <ion-icon class="ion-padding header-icon ion-float-left" name="cart"></ion-icon>
+    <ion-icon class="ion-padding-vertical header-icon ion-float-left" name="search"></ion-icon>
+    <ion-icon class="ion-padding header-icon ion-float-right" name="menu" (click)="openCustom()"></ion-icon>
+    <p class="ion-float-right header-name">اسم اپلیکیشن</p>
+</ion-header>
+
+<ion-content>
+    <ion-slides class="content-slider" pager="true" [options]="slideOpts">
+        <ion-slide>
+            <div class="slide" id="slide--1"></div>
+        </ion-slide>
+        <ion-slide>
+            <div class="slide" id="slide--2"></div>
+        </ion-slide>
+        <ion-slide>
+            <div class="slide" id="slide--3"></div>
+        </ion-slide>
+    </ion-slides>
+    <div class="subSlider">
+        <p class="ion-float-right ion-padding-horizontal subSlider-text">محصولات شگفت انگیز</p>
+    </div>
+    <hr class="hr-prime ion-margin-horizontal">
+
+    <ion-infinite-scroll direction="x" class="wide-as-needed">
+
+        <app-products *ngFor="let i of countOffer"></app-products>
+
+    </ion-infinite-scroll>
+
+<!--    <ion-button expand="block" size="large" class="ion-margin-horizontal">دسته بندی شگفت انگیز 1</ion-button>-->
+<!--    <div class="ion-margin-horizontal category-button-box">-->
+<!--        <ion-button class="category-button" size="large">دسته بندی شگفت انگیز 2</ion-button>-->
+<!--        <ion-button class="category-button" size="large">دسته بندی شگفت انگیز 3</ion-button>-->
+<!--    </div>-->
+<!--    <ion-button expand="block" size="large" class="ion-margin-horizontal">دسته بندی شگفت انگیز 4</ion-button>-->
+<!--    <div class="ion-margin-horizontal category-button-box">-->
+<!--        <ion-button class="category-button" size="large">دسته بندی شگفت انگیز 5</ion-button>-->
+<!--        <ion-button class="category-button" size="large">دسته بندی شگفت انگیز 6</ion-button>-->
+<!--    </div>-->
+    <ion-infinite-scroll direction="x" class="wide-as-needed">
+
+        <app-product-two *ngFor="let i of countOffer"></app-product-two>
+
+    </ion-infinite-scroll>
+
+</ion-content>

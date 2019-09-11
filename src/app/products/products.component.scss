@@ -1,0 +1,50 @@
+.products-card {
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  text-align: center;
+  width: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  background-image: url("../../assets/img/ts.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  padding-top: 100px;
+}
+
+.product-id {
+  width: 100%;
+}
+
+.product-prize {
+  width: 100%;
+  color: #f04141;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: line-through black;
+  font-weight: bold;
+}
+
+.product-down {
+  width: 100%;
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.product-name {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.product-button {
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}

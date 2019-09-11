@@ -1,0 +1,8 @@
+{
+  "name": "saleApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "705f28c2"
+}
